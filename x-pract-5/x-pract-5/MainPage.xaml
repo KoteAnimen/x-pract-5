@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="x_pract_5.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>            
+        </Grid.ColumnDefinitions>        
+        <Entry x:Name="ent_NumberField" FontSize="Title" Grid.Column="0" Grid.Row="0" IsReadOnly="False" Grid.ColumnSpan="4"/>
+        <Label x:Name="lbl_calcucateScreen" Text="" FontSize="Medium" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4"/>
+        <Button x:Name="btn_Clear" Text="C" FontSize="Medium" Grid.Column="0" Grid.Row="1" Clicked="btn_Clear_Clicked"/>
+        <Button x:Name="btn_DeleteOne" Text="X" FontSize="Medium" Grid.Column="1" Grid.Row="1" Clicked="btn_DeleteOne_Clicked"/>
+        <Button x:Name="btn_Percent" Text="%" FontSize="Medium" Grid.Column="2" Grid.Row="1" Clicked="btn_Percent_Clicked"/>
+        <Button x:Name="btn_Devide" Text="/" FontSize="Medium" Grid.Column="3" Grid.Row="1" Clicked="btn_Devide_Clicked"/>
+        <Button x:Name="btn_1" Text="1" FontSize="Medium" Grid.Column="0" Grid.Row="2" Clicked="btn_1_Clicked"/>
+        <Button x:Name="btn_2" Text="2" FontSize="Medium" Grid.Column="1" Grid.Row="2" Clicked="btn_2_Clicked"/>
+        <Button x:Name="btn_3" Text="3" FontSize="Medium" Grid.Column="2" Grid.Row="2" Clicked="btn_3_Clicked"/>
+        <Button x:Name="btn_Mult" Text="*" FontSize="Medium" Grid.Column="3" Grid.Row="2" Clicked="btn_Mult_Clicked"/>
+        <Button x:Name="btn_4" Text="4" FontSize="Medium" Grid.Column="0" Grid.Row="3" Clicked="btn_4_Clicked"/>
+        <Button x:Name="btn_5" Text="5" FontSize="Medium" Grid.Column="1" Grid.Row="3" Clicked="btn_5_Clicked"/>
+        <Button x:Name="btn_6" Text="6" FontSize="Medium" Grid.Column="2" Grid.Row="3" Clicked="btn_6_Clicked"/>
+        <Button x:Name="btn_Subtraction" Text="-" FontSize="Medium" Grid.Column="3" Grid.Row="3" Clicked="btn_Subtraction_Clicked"/>
+        <Button x:Name="btn_7" Text="7" FontSize="Medium" Grid.Column="0" Grid.Row="4" Clicked="btn_7_Clicked"/>
+        <Button x:Name="btn_8" Text="8" FontSize="Medium" Grid.Column="1" Grid.Row="4" Clicked="btn_8_Clicked"/>
+        <Button x:Name="btn_9" Text="9" FontSize="Medium" Grid.Column="2" Grid.Row="4" Clicked="btn_9_Clicked"/>
+        <Button x:Name="btn_Addition" Text="+" FontSize="Medium" Grid.Column="3" Grid.Row="4" Clicked="btn_Addition_Clicked"/>
+        <Button x:Name="btn_0" Text="0" FontSize="Medium" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Clicked="btn_0_Clicked"/>
+        <Button x:Name="btn_Dot" Text="," FontSize="Medium" Grid.Column="2" Grid.Row="5" Clicked="btn_Dot_Clicked"/>
+        <Button x:Name="btn_GetAnswer" Text="=" FontSize="Medium" Grid.Column="3" Grid.Row="5" Clicked="btn_GetAnswer_Clicked"/>
+    </Grid>
+</ContentPage>
